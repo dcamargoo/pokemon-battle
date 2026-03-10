@@ -1,11 +1,11 @@
 public class Attack {
 
     private final String NAME;
-    private int damageAmount;
+    private int damage;
 
-    public Attack(String param_name, int param_damage_amount){
-        this.NAME = param_name;
-        this.damageAmount = param_damage_amount;
+    public Attack(String name, int damage){
+        this.NAME = name;
+        this.damage = damage;
     }
 
     public String getNAME() {
@@ -13,18 +13,18 @@ public class Attack {
     }
 
     public int getDamageAmount() {
-        return damageAmount;
+        return damage;
     }
 
-    public void setDamageAmount(int damageAmount) {
-        this.damageAmount = damageAmount;
+    public void setDamageAmount(int damage) {
+        this.damage = damage;
     }
 
     @Override
     public String toString() {
         return "Attack{" +
                 "NAME='" + NAME + '\'' +
-                ", damageAmount=" + damageAmount +
+                ", damage=" + damage +
                 '}';
     }
 }
